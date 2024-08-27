@@ -1,4 +1,4 @@
-import { ESPLoader } from './bundle.js';
+import { ESPLoader } from 'https://unpkg.com/esptool-js/bundle.js';
 
 let port;
 let esptool;
