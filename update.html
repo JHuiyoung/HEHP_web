@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>펌웨어 업데이트 - HEHP</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/esp-web-tools@latest/dist/web/install-button.js"></script>
 </head>
 <body>
     <header>
@@ -20,15 +21,15 @@
     <main>
         <section>
             <h2>최신 펌웨어 다운로드 및 업데이트</h2>
-            <button id="connect">디바이스 연결</button>
-            <button id="updateFirmware" disabled>펌웨어 업데이트</button>
+            <esp-web-install-button
+                manifest="manifest.json"
+                serialportlabel="ESP32 또는 ESP8266">
+            </esp-web-install-button>
             <pre id="log"></pre>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 하드웨어 임베디드 해킹 플랫폼</p>
     </footer>
-    <script type="module" src="https://unpkg.com/esptool-js/bundle.js"></script>
-    <script type="module" src="update.js"></script>
 </body>
 </html>
