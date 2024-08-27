@@ -1,3 +1,5 @@
+import { ESPLoader } from './bundle.js';
+
 let port;
 let esptool;
 let logElement = document.getElementById('log');
